@@ -146,7 +146,7 @@ const ProductList = () => {
           isLoading ? <Loader/> :
           isSearched?
           <div className="searched-product">
-            <h2>{count} results found for ‘{keyword}'</h2>
+            <h2 style={{color:"#969191"}}>{count} results found for ‘{keyword}'</h2>
             <div className="table-container">
               <table  className="product-table" cellSpacing="0" width="100%" height="100%">
                 <thead>
