@@ -1,0 +1,65 @@
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 1rem;
+  margin-top: 20px;
+  margin-right: 30px;
+  cursor: pointer;
+  
+  .role {
+    display: flex;
+    align-items: center;
+    h3 {
+      margin-right: 0.5rem;
+    }
+    img {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  .profile {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: $blue;
+    border-radius: 50%; // Make profile circular
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .onlineStatus {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background-color: $light-green;
+      border-radius: 50%; // Make online status circular
+      border: none;
+      bottom: 0;
+      right: 0;
+      border: 2px solid white; // Border for contrast
+    }
+  }
+}
+
+@media (max-width: $max-width-tablet) {
+  .header-right {
+    padding: 0.75rem;
+    .profile {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media (max-width: $max-width-phone) {
+  .header-right {
+    padding: 0.5rem;
+    .profile {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.product-table-container {
+  padding: 30px;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  
+
+  
+  .addFavorites {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-right: 30px;
+  }
+}
+
+.table-container {
+    .product-table {
+      width: 80%;
+      border-collapse: collapse;
+      border: none;
+      margin-left: 120px;  
+      th {
+        color: $blue;
+        text-align: center;
+        padding: 10px;
+      }
+  
+      td {
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid $light-gray;
+      }
+      tr{
+        cursor: pointer;
+        &:hover{
+          background-color: $light-gray;
+        }
+      }
+  
+      // Add border bottom to all rows except the last one
+      tr:not(:last-child) td {
+        border-bottom: 1px solid $dark-gray;
+      }
+      td:first-child {
+        color: $dark-gray;
+      }
+  
+      .action-icon {
+        width: 22px;
+        height: 22px;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+      
+      .picture {
+        width: 65px;
+        height: 65px;
+      }
+      .searched-product{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .product-info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: flex-start;
+          
+          .sku {
+            color: $blue;  
+            font-weight: bold; 
+            padding-bottom: 20px
+          }
+        
+          .product-name {
+            color:#000 ;
+            font-size: larger;
+            font-weight: bold;
+            padding-bottom: 20px
+          }
+          .product-description{
+            color: $dark-gray;
+            padding-bottom: 20px
+          }
+        }
+        
+        .product-icon {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 5px;
+        }
+      }
+      
+      
+    }
+    .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      width: 100%;
+      list-style: none;
+    
+      .page-item {
+        margin: 0 5px;
+        
+        .page-link {
+          padding: 8px 12px;
+          border-radius: 5px;
+          color: $blue;
+          text-decoration: none;
+          font-weight: bold;
+    
+          &:hover {
+            background-color: lighten($blue, 15%);
+            color: white;
+          }
+    
+          &.active-page {
+            background-color: $blue;
+            color: white;
+          }
+        }
+      }
+    }
+    
+  
+    
+      
+  }
+  
+
+@media (max-width: 768px) {
+  .topSection {
+    flex-direction: column;
+  }
+
+  .textsearch input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .addFavorites {
+    margin-top: 10px;
+  }
+}

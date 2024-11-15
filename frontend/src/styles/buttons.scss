@@ -1,0 +1,23 @@
+.custom-add-button {
+    background-color: $blue !important; 
+    color: white !important; 
+    border-radius: 10px !important; 
+    padding: 10px 40px !important;
+    
+  
+    &:hover {
+      background-color: darken($blue, 10%); // Darken on hover
+    }
+  }
+.favoriteBtn{
+    border-radius: 10px !important; 
+    padding: 10px 20px !important;
+}
+  
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    
+  }

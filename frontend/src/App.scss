@@ -1,0 +1,25 @@
+@import "./styles/variables.scss";
+@import "./styles/header.scss";
+@import "./styles/loader.scss";
+@import "./styles/productList.scss";
+@import "./styles/buttons.scss";
+@import "./styles/searchBar.scss";
+@import "./styles/DeleteModal.scss";
+@import "./styles/AddEditProduct.scss";
+@import "./styles/ProductDetail.scss";
+
+* {
+    margin: 0;
+    padding: 0;  
+}
+
+body {
+    font-family: $font; 
+    overflow-x: hidden; 
+    background: $white;
+    overflow-y: auto;
+    scrollbar-width: none; 
+    ::-webkit-scrollbar{
+        display: none;
+    }   
+}
